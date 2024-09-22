@@ -3,94 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="QA Training Courses: Manual Testing, Selenium WebDriver with Java, Postman for API Testing">
+    <meta name="description" content="QA Training by [Your Name]: Manual Testing, Selenium WebDriver, API Testing">
     <title>QA Training by [Your Name]</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        section {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #4CAF50;
-        }
-        .courses, .testimonials, .contact {
-            margin-bottom: 20px;
-        }
-        .contact-info {
-            list-style: none;
-            padding: 0;
-        }
-        .contact-info li {
-            margin: 5px 0;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+        header { background: #4CAF50; color: white; padding: 100px 0; text-align: center; }
+        header h1 { font-size: 3rem; margin-bottom: 10px; }
+        header p { font-size: 1.5rem; }
+        .cta-button { background: white; color: #4CAF50; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+        #about, #courses, #testimonials, #contact { padding: 40px 20px; }
+        h2 { text-align: center; margin-bottom: 20px; color: #4CAF50; }
+        .course-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .course-item { background: white; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .testimonial { margin: 20px auto; text-align: center; background: white; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        #contact ul { list-style-type: none; text-align: center; }
+        footer { background: #4CAF50; color: white; text-align: center; padding: 20px; }
     </style>
 </head>
 <body>
 
+<!-- Header Section -->
 <header>
-    <h1>QA Training by [Your Name]</h1>
-    <p>18 Years of Experience in Software Testing</p>
+    <div class="container">
+        <h1>QA Training by [Your Name]</h1>
+        <p>18 Years of Expertise in Software Testing</p>
+        <a href="#courses" class="cta-button">Explore Courses</a>
+    </div>
 </header>
 
-<section>
-    <h2>About Me</h2>
-    <p>I am a QA professional with 18 years of experience in the field of Software Testing. I offer training in Manual Testing, Automation Testing using Selenium WebDriver with Java, and API Testing using Postman.</p>
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>I am a QA professional with 18 years of experience in Software Testing. I provide training in Manual Testing, Automation Testing using Selenium WebDriver with Java, and API Testing using Postman.</p>
+    </div>
 </section>
 
-<section class="courses">
-    <h2>Courses I Provide</h2>
-    <ul>
-        <li>Manual Testing</li>
-        <li>Automation Testing Using Selenium WebDriver and Java</li>
-        <li>Postman for API Testing</li>
-    </ul>
+<!-- Courses Section -->
+<section id="courses">
+    <div class="container">
+        <h2>Courses Offered</h2>
+        <div class="course-grid">
+            <div class="course-item">
+                <h3>Manual Testing</h3>
+                <p>Learn fundamentals of manual software testing, including test case design, test execution, and defect tracking.</p>
+            </div>
+            <div class="course-item">
+                <h3>Automation Testing with Selenium WebDriver and Java</h3>
+                <p>Master automation testing with Selenium WebDriver and Java for web applications.</p>
+            </div>
+            <div class="course-item">
+                <h3>Postman for API Testing</h3>
+                <p>Understand how to automate API testing using Postman, focusing on REST APIs.</p>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section class="testimonials">
-    <h2>Student Testimonials</h2>
-    <blockquote>
-        "The Automation Testing course with Selenium and Java was extremely comprehensive and well structured. I highly recommend it!" - Student A
-    </blockquote>
-    <blockquote>
-        "Postman for API testing training really helped me advance in my career. [Your Name] is a great trainer!" - Student B
-    </blockquote>
+<!-- Testimonials Section -->
+<section id="testimonials">
+    <div class="container">
+        <h2>Student Testimonials</h2>
+        <div class="testimonial">
+            <p>"[Your Name] is an exceptional trainer! The Selenium WebDriver course helped me land my current job." - Student A</p>
+        </div>
+        <div class="testimonial">
+            <p>"The Postman API training was hands-on and extremely insightful. Highly recommend!" - Student B</p>
+        </div>
+    </div>
 </section>
 
-<section class="contact">
-    <h2>Contact Me</h2>
-    <p>If you're interested in any of the courses or have any questions, feel free to contact me:</p>
-    <ul class="contact-info">
-        <li><strong>Phone:</strong> [Your Phone Number]</li>
-        <li><strong>Email:</strong> [Your Email Address]</li>
-    </ul>
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>If you're interested in any of the courses or have questions, feel free to reach out:</p>
+        <ul class="contact-info">
+            <li><strong>Phone:</strong> [Your Phone Number]</li>
+            <li><strong>Email:</strong> [Your Email Address]</li>
+        </ul>
+    </div>
 </section>
 
+<!-- Footer -->
 <footer>
     <p>&copy; 2024 QA Training by [Your Name]. All rights reserved.</p>
 </footer>
 
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
 </body>
 </html>
-
